@@ -29,7 +29,7 @@ app.use("", bookRouter);
 app.listen(process.env.port, async () => {
   try {
     await connection;
-    console.log(`Connected to mongodb at port ${process.env.port}`);
+    console.log(`Connected to mongodb`);
   } catch (err) {
     console.log(err);
   }
